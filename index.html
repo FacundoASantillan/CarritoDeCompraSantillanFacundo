@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morioh Manga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="icono">
+                <a href="./index.html"><img src="./assets/img/logo1.jpg" alt="Morioh Manga"></a>
+                
+            </div>
+            <div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Catalogo de novedades</h1>
+            <section class="catalogo-index" id="contenedor_productos">
+
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Carrito</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="contenedor_carrito">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="redes-footer">
+            <div>
+                <h2>Contactanos</h2>
+                <a title="Instagram" href="https://www.instagram.com/morioh.manga.castelar/?hl=es"target="_blank" rel="noopener noreferrer"><img src="./assets/img/instagram.png" alt="Instagram"></a>
+                <a title="Facebook" href="https://www.facebook.com/profile.php?id=100072437049160"target="_blank" rel="noopener noreferrer"><img src="./assets/img/facebook.png" alt="Facebook"></a>
+                <a title="Google Maps" href="https://www.google.com/maps/place/Morioh+-+Manga/@-34.6538122,-58.6422249,15z/data=!4m5!3m4!1s0x0:0x4b34f93cf4a0e4f4!8m2!3d-34.6538121!4d-58.6422249"target="_blank" rel="noopener noreferrer"><img src="./assets/img/alfiler.png" alt="Google Maps"></a>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
