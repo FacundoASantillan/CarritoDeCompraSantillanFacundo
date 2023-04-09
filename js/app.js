@@ -168,4 +168,4 @@ async function peticionAPI(){
         </div>`
     })
 }
-peticionAPI()
+peticionAPI(listaLogos)
