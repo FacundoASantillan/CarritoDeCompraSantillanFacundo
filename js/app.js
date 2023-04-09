@@ -159,7 +159,7 @@ finalizar_compra.addEventListener("click",() =>{
 
 
 
-async function peticionAPI(){
+/*async function peticionAPI(){
         let response = await fetch("../api_redes.json")
         let listaLogos = await response.json()
         listaLogos.forEach(Logo =>{
@@ -170,4 +170,4 @@ async function peticionAPI(){
 }
 peticionAPI(listaLogos)
 
-const contenedor_redes = document.getElementById("contenedor_redes")
+const contenedor_redes = document.getElementById("contenedor_redes")*/
