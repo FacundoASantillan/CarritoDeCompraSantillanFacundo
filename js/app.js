@@ -157,15 +157,17 @@ finalizar_compra.addEventListener("click",() =>{
     }
 })
 
-const contenedor_redes = document.getElementById("contenedor_redes")
+
 
 async function peticionAPI(){
         let response = await fetch("../api_redes.json")
         let listaLogos = await response.json()
         listaLogos.forEach(Logo =>{
         contenedor_redes.innerHTML += `<div>
-        <a title=${Logo.nombre} href=${Logo.link} target="_blank" rel="noopener noreferrer"><img src=${Logo.img} alt=${Logo.nombre}></a>
+        <a title=${Logo.nombre} href=${Logo.link} target="_blank" rel="noopener noreferrer"><img src=${Logo.img}></a>
         </div>`
     })
 }
 peticionAPI(listaLogos)
+
+const contenedor_redes = document.getElementById("contenedor_redes")
