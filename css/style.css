@@ -64,9 +64,29 @@ main h1{
     background-color: #e1aa47;
     transition-duration: 2s;
 }
-.redes-footer{
+.card mb-3{
+    background-color: #ffebbe;
+}
+.card-body h5{
+    color: #8f1a26;
+}
+.total-carrito{
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    margin-right: 25px;
+}
+.eliminar-producto{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 10px;
+}
+footer section{
+    display: flex;
+    justify-content: center;
+}
+footer section div{
+    display: flex;
     margin: 20px;
 }
 .redes-footer h2{
