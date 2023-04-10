@@ -157,10 +157,11 @@ finalizar_compra.addEventListener("click",() =>{
     }
 })
 
+const contenedor_redes = document.getElementById("contenedor_redes")
+let listaLogos
 
-
-/*async function peticionAPI(){
-        let response = await fetch("../api_redes.json")
+async function peticionAPI(){
+        let response = await fetch("../json/api.json")
         let listaLogos = await response.json()
         listaLogos.forEach(Logo =>{
         contenedor_redes.innerHTML += `<div>
@@ -169,5 +170,3 @@ finalizar_compra.addEventListener("click",() =>{
     })
 }
 peticionAPI(listaLogos)
-
-const contenedor_redes = document.getElementById("contenedor_redes")*/
