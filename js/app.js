@@ -164,9 +164,9 @@ async function peticionAPI(){
     let response = await fetch("../json/api.json")
     let listaLogos = await response.json()
     listaLogos.forEach(Logo =>{
-    contenedor_redes.innerHTML += `<div>
-        <a title=${Logo.nombre} href=${Logo.link} target="_blank" rel="noopener noreferrer"><img src=${Logo.img}></a>
-    </div>`
+        contenedor_redes.innerHTML += `<div>
+            <a title=${Logo.nombre} href=${Logo.link} target="_blank" rel="noopener noreferrer"><img src=${Logo.img}></a>
+        </div>`
     })
 }
 peticionAPI(listaLogos)
