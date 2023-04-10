@@ -12,12 +12,12 @@ class ProductoController{
         contenedor_productos.innerHTML = ""
         this.listaProductos.forEach( Producto =>{
             contenedor_productos.innerHTML +=`<div>
-            <img src="${Producto.img}" alt="${Producto.nombre}">
+                <img src="${Producto.img}" alt="${Producto.nombre}">
                 <h5>${Producto.editorial}</h5>
                 <h3>${Producto.nombre}</h3>
                 <h4>$${Producto.precio}</h4>
                 <a href="#" id=Manga$${Producto.id}>Añadir al carrito</a>
-        </div>`
+            </div>`
         })
     }
 }
@@ -125,8 +125,8 @@ controladorProducto.listaProductos.forEach(Producto =>{
         Toastify({
             text: "Añadido al carrito",
             duration: 3000,
-            gravity: "bottom", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
+            gravity: "bottom",
+            position: "center",
             style: {
             background: "linear-gradient(to right, #8f1a26, #e1aa47)",
             },
@@ -161,12 +161,12 @@ const contenedor_redes = document.getElementById("contenedor_redes")
 let listaLogos
 
 async function peticionAPI(){
-        let response = await fetch("../json/api.json")
-        let listaLogos = await response.json()
-        listaLogos.forEach(Logo =>{
-        contenedor_redes.innerHTML += `<div>
+    let response = await fetch("../json/api.json")
+    let listaLogos = await response.json()
+    listaLogos.forEach(Logo =>{
+    contenedor_redes.innerHTML += `<div>
         <a title=${Logo.nombre} href=${Logo.link} target="_blank" rel="noopener noreferrer"><img src=${Logo.img}></a>
-        </div>`
+    </div>`
     })
 }
 peticionAPI(listaLogos)
