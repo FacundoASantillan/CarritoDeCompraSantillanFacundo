@@ -81,7 +81,7 @@ main h1{
     position: relative;
     top: 10px;
 }
-footer section{
+footer{
     display: flex;
     justify-content: center;
 }
@@ -89,14 +89,8 @@ footer section div{
     display: flex;
     margin: 20px;
 }
-.redes-footer h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    font-weight: 200;
-    color: black;
-}
 .redes-footer a img{
     width: 50px;
     height: 50px;
-    margin: 5px;
+    margin: 3px;
 }
